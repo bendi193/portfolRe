@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти — Теплі Лапки</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container header__inner">
+        <a href="index.html" class="logo"><span class="logo__icon">🐾</span><span class="logo__text">Теплі Лапки</span></a>
+        <nav class="nav" id="nav">
+            <ul class="nav__list">
+                <li><a href="animals.html" class="nav__link">Тварини</a></li>
+                <li><a href="about.html" class="nav__link">Про нас</a></li>
+                <li><a href="help.html" class="nav__link">Як допомогти</a></li>
+                <li><a href="reviews.html" class="nav__link">Відгуки</a></li>
+                <li><a href="contacts.html" class="nav__link active">Контакти</a></li>
+            </ul>
+        </nav>
+        <a href="help.html" class="btn btn--primary header__cta">Допомогти</a>
+        <button class="burger" id="burger" aria-label="Відкрити меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-badge">Зв’язок</span>
+            <h1 class="page-title">Контакти та заявка</h1>
+            <p class="page-desc">Напиши нам або залиш заявку на знайомство з твариною.</p>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__grid">
+                <div class="contact-card fade-up">
+                    <span class="contact-card__icon">📍</span>
+                    <h3>Адреса</h3>
+                    <p>м. Київ, вул. Тепла, 12<br>біля парку «Перемога»</p>
+                </div>
+                <div class="contact-card fade-up">
+                    <span class="contact-card__icon">📞</span>
+                    <h3>Телефон</h3>
+                    <p><a href="tel:+380441234567">+38 (044) 123-45-67</a></p>
+                    <p><a href="tel:+380501234567">+38 (050) 123-45-67</a></p>
+                </div>
+                <div class="contact-card fade-up">
+                    <span class="contact-card__icon">✉️</span>
+                    <h3>Email</h3>
+                    <p><a href="mailto:hello@tepli-lapky.ua">hello@tepli-lapky.ua</a></p>
+                </div>
+                <div class="contact-card fade-up">
+                    <span class="contact-card__icon">🕐</span>
+                    <h3>Графік роботи</h3>
+                    <p>Пн–Пт: 10:00 – 18:00<br>Сб–Нд: 11:00 – 16:00</p>
+                </div>
+            </div>
+            <div class="socials">
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Telegram</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="adoption">
+        <div class="container">
+            <div class="adoption__wrapper">
+                <div class="adoption__info fade-up">
+                    <span class="section-badge">Адопція</span>
+                    <h2 class="section-title">Хочеш познайомитися?</h2>
+                    <p>Залиш заявку — ми зв’яжемося з тобою протягом 24 годин і організуємо зустріч.</p>
+                    <ul class="adoption__list">
+                        <li>✓ Безкоштовна консультація</li>
+                        <li>✓ Знайомство в зручний час</li>
+                        <li>✓ Підтримка після адопції</li>
+                    </ul>
+                </div>
+                <form class="adoption-form" id="adoptionForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Ваше ім’я *</label>
+                        <input type="text" id="name" name="name" required placeholder="Олена" autocomplete="name">
+                        <span class="error-msg" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+380 XX XXX XX XX" autocomplete="tel">
+                        <span class="error-msg" id="phoneError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="olena@email.com" autocomplete="email">
+                        <span class="error-msg" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="animal">Оберіть тварину *</label>
+                        <select id="animal" name="animal" required>
+                            <option value="">— оберіть —</option>
+                        </select>
+                        <span class="error-msg" id="animalError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Повідомлення</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Розкажіть трохи про себе..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">Надіслати заявку</button>
+                    <p class="form-note">* обов’язкові поля. Це демо-форма — дані нікуди не надсилаються.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__grid">
+        <div class="footer__brand">
+            <a href="index.html" class="logo"><span class="logo__icon">🐾</span><span class="logo__text">Теплі Лапки</span></a>
+            <p>Притулок для безпритульних тварин. Разом робимо світ теплішим.</p>
+        </div>
+        <div class="footer__nav">
+            <h4>Навігація</h4>
+            <ul>
+                <li><a href="animals.html">Тварини</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="help.html">Як допомогти</a></li>
+                <li><a href="reviews.html">Відгуки</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </div>
+        <div class="footer__contacts">
+            <h4>Контакти</h4>
+            <p>+38 (044) 123-45-67</p>
+            <p>hello@tepli-lapky.ua</p>
+            <p>м. Київ, вул. Тепла, 12</p>
+        </div>
+    </div>
+    <div class="footer__bottom"><div class="container"><p>© 2025 Теплі Лапки. Усі права захищено.</p></div></div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    <span class="toast__icon">✅</span>
+    <p class="toast__text">Заявку успішно надіслано! (демо-режим)</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

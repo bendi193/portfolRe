@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Теплі Лапки — притулок для безпритульних тварин. Знайди друга на все життя.">
+    <title>Теплі Лапки — Головна</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container header__inner">
+        <a href="index.html" class="logo" aria-label="Теплі Лапки — головна">
+            <span class="logo__icon" aria-hidden="true">🐾</span>
+            <span class="logo__text">Теплі Лапки</span>
+        </a>
+        <nav class="nav" id="nav" aria-label="Головна навігація">
+            <ul class="nav__list">
+                <li><a href="animals.html" class="nav__link">Тварини</a></li>
+                <li><a href="about.html" class="nav__link">Про нас</a></li>
+                <li><a href="help.html" class="nav__link">Як допомогти</a></li>
+                <li><a href="reviews.html" class="nav__link">Відгуки</a></li>
+                <li><a href="contacts.html" class="nav__link">Контакти</a></li>
+            </ul>
+        </nav>
+        <a href="help.html" class="btn btn--primary header__cta">Допомогти</a>
+        <button class="burger" id="burger" aria-label="Відкрити меню" aria-expanded="false" aria-controls="nav">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+    <section class="hero" id="hero">
+        <div class="container hero__grid">
+            <div class="hero__content fade-up">
+                <span class="hero__badge">Притулок з 2018 року</span>
+                <h1 class="hero__title">Даруємо тепло<br>і дім кожному<br>хвостику</h1>
+                <p class="hero__text">
+                    «Теплі Лапки» — місце, де безпритульні собаки та коти знаходять безпеку,
+                    любов і нову родину. Приєднуйся до нас і зміни чиєсь життя.
+                </p>
+                <div class="hero__actions">
+                    <a href="animals.html" class="btn btn--primary btn--lg">Знайти друга</a>
+                    <a href="help.html" class="btn btn--outline btn--lg">Допомогти зараз</a>
+                </div>
+            </div>
+            <div class="hero__image-wrap fade-up">
+                <img
+                        src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=900&q=80"
+                        alt="Щасливі собаки та коти в притулку Теплі Лапки"
+                        class="hero__image" width="600" height="700">
+                <div class="hero__floating-card">
+                    <span class="hero__floating-number">1 247+</span>
+                    <span class="hero__floating-label">знайшли дім</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="stats__grid">
+                <div class="stat-card fade-up">
+                    <span class="stat-card__number" data-target="1840">0</span>
+                    <span class="stat-card__label">Врятованих тварин</span>
+                </div>
+                <div class="stat-card fade-up">
+                    <span class="stat-card__number" data-target="1247">0</span>
+                    <span class="stat-card__label">Знайдених домівок</span>
+                </div>
+                <div class="stat-card fade-up">
+                    <span class="stat-card__number" data-target="86">0</span>
+                    <span class="stat-card__label">Активних волонтерів</span>
+                </div>
+                <div class="stat-card fade-up">
+                    <span class="stat-card__number" data-target="7">0</span>
+                    <span class="stat-card__label">Років роботи</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preview animals -->
+    <section class="animals preview">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="section-badge">Наші підопічні</span>
+                <h2 class="section-title">Хто чекає на дім</h2>
+                <p class="section-desc">Кілька історій, які вже шукають свою родину.</p>
+            </div>
+            <div class="animals__grid" id="previewGrid"></div>
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="animals.html" class="btn btn--primary btn--lg">Дивитися всіх тварин</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Short about -->
+    <section class="about-preview">
+        <div class="container about__grid">
+            <div class="about__images fade-up">
+                <img src="https://images.unsplash.com/photo-1601758124510-52d02ddb7cbd?auto=format&fit=crop&w=600&q=80"
+                     alt="Волонтерка з собакою" class="about__img about__img--main" width="480" height="480">
+            </div>
+            <div class="about__content fade-up">
+                <span class="section-badge">Про притулок</span>
+                <h2 class="section-title">Ми рятуємо, лікуємо і знаходимо дім</h2>
+                <p class="about__text">З 2018 року ми даємо другий шанс тваринам, які втратили дім. Кожна історія важлива.</p>
+                <a href="about.html" class="btn btn--outline">Дізнатися більше</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__grid">
+        <div class="footer__brand">
+            <a href="index.html" class="logo">
+                <span class="logo__icon">🐾</span>
+                <span class="logo__text">Теплі Лапки</span>
+            </a>
+            <p>Притулок для безпритульних тварин. Разом робимо світ теплішим.</p>
+        </div>
+        <div class="footer__nav">
+            <h4>Навігація</h4>
+            <ul>
+                <li><a href="animals.html">Тварини</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="help.html">Як допомогти</a></li>
+                <li><a href="reviews.html">Відгуки</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </div>
+        <div class="footer__contacts">
+            <h4>Контакти</h4>
+            <p>+38 (044) 123-45-67</p>
+            <p>hello@tepli-lapky.ua</p>
+            <p>м. Київ, вул. Тепла, 12</p>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <p>© 2025 Теплі Лапки. Усі права захищено. Сайт створено для портфоліо.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

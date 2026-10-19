@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тварини — Теплі Лапки</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container header__inner">
+        <a href="index.html" class="logo">
+            <span class="logo__icon">🐾</span>
+            <span class="logo__text">Теплі Лапки</span>
+        </a>
+        <nav class="nav" id="nav">
+            <ul class="nav__list">
+                <li><a href="animals.html" class="nav__link active">Тварини</a></li>
+                <li><a href="about.html" class="nav__link">Про нас</a></li>
+                <li><a href="help.html" class="nav__link">Як допомогти</a></li>
+                <li><a href="reviews.html" class="nav__link">Відгуки</a></li>
+                <li><a href="contacts.html" class="nav__link">Контакти</a></li>
+            </ul>
+        </nav>
+        <a href="help.html" class="btn btn--primary header__cta">Допомогти</a>
+        <button class="burger" id="burger" aria-label="Відкрити меню" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-badge">Наші підопічні</span>
+            <h1 class="page-title">Хто чекає на дім</h1>
+            <p class="page-desc">Кожна тварина має свою історію. Знайди того, хто стане частиною твоєї родини.</p>
+        </div>
+    </section>
+
+    <section class="animals">
+        <div class="container">
+            <div class="filters">
+                <div class="search-box">
+                    <input type="search" id="searchInput" class="search-input" placeholder="Пошук за ім'ям..." aria-label="Пошук тварин за ім'ям">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <div class="filter-buttons" role="group" aria-label="Фільтр за видом">
+                    <button class="filter-btn active" data-filter="all">Усі</button>
+                    <button class="filter-btn" data-filter="dog">Собаки</button>
+                    <button class="filter-btn" data-filter="cat">Коти</button>
+                </div>
+            </div>
+            <div class="animals__grid" id="animalsGrid"></div>
+            <p class="no-results" id="noResults" hidden>На жаль, за вашим запитом нічого не знайдено 🐾</p>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__grid">
+        <div class="footer__brand">
+            <a href="index.html" class="logo"><span class="logo__icon">🐾</span><span class="logo__text">Теплі Лапки</span></a>
+            <p>Притулок для безпритульних тварин. Разом робимо світ теплішим.</p>
+        </div>
+        <div class="footer__nav">
+            <h4>Навігація</h4>
+            <ul>
+                <li><a href="animals.html">Тварини</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="help.html">Як допомогти</a></li>
+                <li><a href="reviews.html">Відгуки</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </div>
+        <div class="footer__contacts">
+            <h4>Контакти</h4>
+            <p>+38 (044) 123-45-67</p>
+            <p>hello@tepli-lapky.ua</p>
+            <p>м. Київ, вул. Тепла, 12</p>
+        </div>
+    </div>
+    <div class="footer__bottom"><div class="container"><p>© 2025 Теплі Лапки. Усі права захищено.</p></div></div>
+</footer>
+
+<!-- Modal -->
+<div class="modal" id="animalModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__content">
+        <button class="modal__close" id="modalClose" aria-label="Закрити">×</button>
+        <div class="modal__body" id="modalBody"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
